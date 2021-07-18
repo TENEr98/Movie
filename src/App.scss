@@ -1,0 +1,19 @@
+@import '../node_modules/rsuite/dist/styles/rsuite-dark.css';
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.Wrapper {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem 1.125rem;
+}
+.Spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
