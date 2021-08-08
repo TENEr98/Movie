@@ -36,7 +36,11 @@ const MovieList = () => {
         throw new Error()
       }
     } catch (error) {
-      notify(error?.message, '', 'error')
+      notify(
+        !!error?.message ? error.message : 'Ошибка',
+        'Произошла ошибка с сервером',
+        'error'
+      )
     }
   }
   const selectPage = (selectedPage) => setPage(selectedPage)

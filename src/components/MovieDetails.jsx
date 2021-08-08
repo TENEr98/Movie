@@ -32,7 +32,6 @@ const MoveDetails = () => {
             data: { movie }
           }
         } = response
-        console.log(response)
         const actors = movie?.actors.map((el) => ({
           name: el.name
         }))
