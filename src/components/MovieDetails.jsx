@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, memo } from 'react'
 import { Icon, IconButton, Loader } from 'rsuite'
 import { MovieAPI } from '../api'
 import { notify } from '../utils/Notification'
@@ -141,4 +141,4 @@ const MoveDetails = () => {
   )
 }
 
-export default MoveDetails
+export default memo(MoveDetails)
